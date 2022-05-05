@@ -10,6 +10,10 @@ class Gui : public QWidget, private Ui::Gui
 
 public:
     explicit Gui(QWidget *parent = nullptr);
+private slots:
+    void on_goButton_clicked();
+
+    void on_resultBrowser_anchorClicked(const QUrl &arg1);
 };
 
 #endif // GUI_H
